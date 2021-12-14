@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">My First App</string>
+    <string name="my_address">주소 입력 예정</string>
+</resources>

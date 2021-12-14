@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--전체를 감싸는 div-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--head 파트-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/main_css"
+            android:orientation="horizontal"
+            android:weightSum="5">
+            <!--설정란 리스트-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingBottom="5dp"
+                android:onClick="setOnClick">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    app:srcCompat="@drawable/ic_baseline_menu_24" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="설정"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingBottom="5dp"
+                android:onClick="textSetOnClick">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    app:srcCompat="@drawable/ic_baseline_text_format_24" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="글자 설정"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingBottom="5dp"
+                android:onClick="arraySetOnClick">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    app:srcCompat="@drawable/ic_baseline_sort_24" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="정렬 설정"
+                    android:textAlignment="center" />
+            </LinearLayout>
+        </LinearLayout>
+        <!--body 파트 / 소설 내용 출력-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9"
+            android:background="@android:color/transparent"
+            android:padding="40px"
+            android:text="뭔가 재미있는 소설 줄글이라곤 하지만 이거 어디까지 이렇게 작성이 되는 걸까 참 궁금하네 이거 길어지면 내려가는 기능 있어요? 한번 확인해 볼게요
+엔터는 안쳐지는 것 같네 그러면 엔터는 따로 입력을 해 줘야 하고 근데 그거는 내가 한줄씩 입력 받으면서 알아서 하면 될 일 같고, 그러면 내가 좀 더 신경써줘야 하는 건 줄바꿈보다는 이게 필요 이상으로 길어졌을 때 어떻게 해야 하는 가 문제인데
+그려면 어떻게 하는 게 내 프로그래밍에 도움이 될까. 지금 무지 길어져서 답이 없어 보이긴 하는데 이거 자동으로 내려가기 기능 없죠? 젠장할."
+            android:id="@+id/text_read"
+            android:textColor="#000000"
+            android:textSize="30dp"
+            android:lineSpacingExtra="7dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
