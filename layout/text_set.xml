@@ -13,7 +13,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1">
-            <!--설정란 리스트-->
+            <!--설정란 바 / 글자 설정-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -37,6 +37,7 @@
             </LinearLayout>
         </LinearLayout>
         <!--body 파트-->
+        <!--글자 크기 설정-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -53,6 +54,7 @@
                 android:ems="10"
                 android:inputType="number" />
         </LinearLayout>
+        <!--폰트 설정 체크박스-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -137,7 +139,7 @@
 
             </LinearLayout>
         </LinearLayout>
-        <!--bottom-->
+        <!--bottom / 확인취소 버튼란-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"

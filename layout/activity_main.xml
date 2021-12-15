@@ -109,7 +109,9 @@
                     android:layout_gravity="center"
                     android:layout_weight="1"
                     android:text="목록 새로고침"
-                    android:textAlignment="center" />
+                    android:autoSizeTextType="uniform"
+                    android:textAlignment="center"
+                    android:textSize="13dp"/>
             </LinearLayout>
         </LinearLayout>
         <!--주소창 출력 파트-->

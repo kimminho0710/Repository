@@ -20,9 +20,8 @@
             android:layout_width="match_parent"
             android:layout_height="53dp" />
     </LinearLayout>
-    <!-- //end 타이틀바 -->
 
-    <!-- Notice -->
+    <!-- 보여줄 데이터 값 -->
     <LinearLayout
         android:padding="24dp"
         android:orientation="vertical"
@@ -74,7 +73,6 @@
             android:layout_height="0dp"
             android:layout_weight="1"/>
     </LinearLayout>
-    <!-- Notice -->
 
     <View
         android:background="#66bdbdbd"
@@ -98,5 +96,4 @@
             android:layout_height="wrap_content"
             android:onClick="mOnClose"/>
     </LinearLayout>
-    <!--// 닫기 버튼 -->
 </LinearLayout>
